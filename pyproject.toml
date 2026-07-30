@@ -1,0 +1,24 @@
+[project]
+name = "rock-paper-scissors"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yusufnx", email = "yusufnx@proton.me" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "inquirerpy>=0.3.4",
+]
+
+[project.scripts]
+rock-paper-scissors = "rock_paper_scissors.game:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
